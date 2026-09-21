@@ -6,7 +6,7 @@ url = "https://www.scrapethissite.com/pages/simple/"
 response = requests.get(url)
 response.encoding = 'utf-8'
 
-soup = BeautifulSoup(response.text, "html.parser")
+texto = BeautifulSoup(response.text, "html.parser")
 paises = texto.find_all("div", class_="col-md-4 country")
 
 
