@@ -11,6 +11,8 @@ paises = texto.find_all("div", class_="col-md-4 country")
 
 
 # 4. Iterar sobre cada tarjeta de país para extraer los datos
+
+datos = []
 for pais in paises:
     # Extraer el nombre del país
     nombre_pais = pais.find("h3", class_="country-name").text.strip()
