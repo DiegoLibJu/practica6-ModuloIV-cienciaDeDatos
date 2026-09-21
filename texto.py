@@ -1,10 +1,6 @@
 import requests
 from bs4 import BeautifulSoup
 import pandas as pd
-# Guardar el script completo en un archivo .py local
-script_code = """import requests
-from bs4 import BeautifulSoup
-import pandas as pd
 
 url = "https://www.scrapethissite.com/pages/simple/"
 response = requests.get(url)
@@ -40,8 +36,3 @@ for pais in paises:
 df = pd.DataFrame(datos)
 df.to_csv("paises_info.csv", index=False)
 print("Scraping exitoso y archivo paises_info.csv creado.")
-"""
-
-
-with open("texto.py", "w", encoding="utf-8") as f:
-    f.write(script_code)
